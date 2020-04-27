@@ -1,0 +1,27 @@
+algoritmo mesa;
+
+variáveis
+    cadapessoas: inteiro;
+    garcon: real;
+    conta: inteiro;
+    consumo: inteiro;
+    pessoas: inteiro;
+fim-variáveis
+
+início
+
+imprima("Digite o valor da conta: ");
+conta := leia();
+imprima("Digite o valor da pessoas: ");
+pessoas := leia();
+
+garcon := conta * 0,1;
+cadapessoas := (conta/pessoas);
+consumo := conta - garcon;
+
+imprima("Total conta: ", conta);
+imprima("Total consumo: ", consumo);
+imprima("Total para o garçon", garcon);
+imprima("Pessoas na mesa: ", cadapessoas);
+
+fim
