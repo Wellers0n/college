@@ -1,0 +1,214 @@
+import { Head, Image, Appear } from 'mdx-deck'
+import Code from 'mdx-code';
+import { CodeSurfer } from "mdx-deck-code-surfer";
+
+import { Cover } from './Cover';
+import { Intro } from './Intro';
+import { Es7 } from './es7';
+import { GoReact } from './goReact'
+import { WhatIsReact } from './whatIsReact'
+import { LifeCicle } from './lifeCicle'
+import { Question } from './question'
+import { Thanks } from './thanks'
+import { Me } from './Me';
+import { HtmlCssJs } from './htmlCssJs';
+import { Stack } from './stack';
+import { Animation } from './animation';
+import { Company } from './company';
+import { MyCompany } from './myCompany';
+import { Slack } from './slack';
+
+export { default as theme } from './theme'
+
+<Head>
+  <title>My introduction</title>
+</Head>
+
+<Cover />
+---
+## Overview
+<ul>
+    <Appear>
+        <div>
+            Um pouco sobre mim
+        </div>
+        <div>
+            Stack que eu uso
+        </div>
+        <div>
+            Como entrei no mercado sem faculdade
+        </div>
+    </Appear>
+</ul>
+
+---
+
+<Intro />
+
+---
+<Stack />
+---
+
+## Desenvolvimento WEB
+
+<ul>
+    <Appear>
+        <div>
+            HTML
+        </div>
+        <div>
+            CSS
+        </div>
+        <div>
+            JS
+        </div>
+    </Appear>
+</ul>
+
+---
+
+<HtmlCssJs />
+
+---
+
+<Animation />
+
+---
+
+<GoReact/>
+
+---
+
+<WhatIsReact/>
+
+---
+
+<CodeSurfer
+  title="Syntax padrão do ReactJS"
+  code={require('!raw-loader!./sintaxReact.js')}
+  showNumbers={false}
+  dark={true}
+  lang="jsx"
+  steps={[
+    { notes: "syntax ReactJS" },
+    { range: [1,1], notes: 'Importando o ReactJS e Component' },
+    { range: [3,3], notes: 'Estende o Component' },
+    { range: [4,7], notes: 'Construtor padrão' },
+    { range: [8,14], notes: 'Método render' },
+  ]}
+/>
+
+---
+
+## Recomendações de linguagens
+
+<ul>
+    <Appear>
+        <div>
+            Javascript
+        </div>
+        <div>
+            Python
+        </div>
+        <div>
+            Java
+        </div>
+    </Appear>
+</ul>
+
+---
+
+<Company />
+
+---
+
+# Estudando
+
+---
+
+## Meus métodos de estudos
+
+<ul>
+    <Appear>
+        <div>
+            Udemy
+        </div>
+        <div>
+            Google
+        </div>
+        <div>
+            Medium / dev.to
+        </div>
+        <div>
+            Slack (React Brasil)
+        </div>
+        <div>
+            Livros
+        </div>
+    </Appear>
+</ul>
+---
+
+## Sempre se manter motivado
+
+---
+
+## Algumas perguntas para se fazer quando realmente você começar a estudar programação 
+
+---
+
+## Perguntas
+
+<ul>
+    <Appear>
+        <div>
+            Quantas horas estou rendendo no estudo por dia ?
+        </div>
+        <div>
+            Onde posso buscar mais conhecimento ?
+        </div>
+        <div>
+            Como posso buscar mais conhecimento ?
+        </div>
+         <div>
+            Como eu aprendo a aprender ?
+        </div>
+        <div>
+            Deveria ter um mentor ?
+        </div>
+    </Appear>
+</ul>
+
+---
+
+## Algumas coisas que pode te desmotivar
+
+<ul>
+    <Appear>
+        <div>
+            Família não te motiva / confia
+        </div>
+        <div>
+            Pessoal pensa que você está brincando no computador
+        </div>
+        <div>
+            Ninguém vai acreditar até você fazer acontecer
+        </div>
+    </Appear>
+</ul>
+
+---
+
+<MyCompany />
+
+---
+
+<Slack />
+
+---
+
+# Perguntas ?
+
+---
+
+# Obrigado!
