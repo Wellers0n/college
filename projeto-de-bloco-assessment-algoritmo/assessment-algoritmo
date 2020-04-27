@@ -1,0 +1,44 @@
+algoritmo mesa;
+
+variáveis
+    valorSalario: real;
+    valorEmprestimo: real;
+    porcentagemValor: real;
+    parcela: real;
+    valorParcelaDividaPorMes: real;
+fim-variáveis
+
+início
+
+imprima("Digite o valor do seu salário: ");
+valorSalario := leia();
+
+porcentagemValor := (30 * valorSalario) / 100
+
+imprima("Digite quantas vezes irá parcelar: ");
+parcela := leia();
+
+imprima("Digite o valor do emprestimo: ");
+valorEmprestimo := leia();
+
+
+valorParcelaDividaPorMes := valorEmprestimo / parcela;
+
+
+SE porcentagemValor < valorParcelaDividaPorMes ENTAO:
+    imprima('Você não pode pegar esse empréstimo');
+    
+    imprima('Valor salário: ', valorSalario);
+    imprima('Valor porcentagem de 30%: ', porcentagemValor);
+    imprima('Valor da parcela: ', parcela);
+    imprima('Valor do emprestimo: ', valorEmprestimo);
+    imprima('Valor a pagar por mês: ', valorParcelaDividaPorMes);
+SENAO
+    imprima('Parabéns seu emprestimo foi aceito!');
+
+    imprima('Valor salário: ', valorSalario);
+    imprima('Valor porcentagem de 30%: ', porcentagemValor);
+    imprima('Valor da parcela: ', parcela);
+    imprima('Valor do emprestimo: ', valorEmprestimo);
+    imprima('Valor a pagar por mês: ', valorParcelaDividaPorMes);
+fim
