@@ -1,3 +1,5 @@
+import pygame
+
 def soma(a, b):
     soma = a + b
     return print(f'A soma é: {soma}')
