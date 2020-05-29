@@ -95,7 +95,7 @@ class Monitoring():
 
         ###############################################################################
         ###############################################################################
-        # arrays surface and rectangle
+        # arrays surface
         self.arrSurface = [self.surfCpu, self.surfMemory, self.surfDisk, self.surfIp, self.surfInfo]
 
     def update(self, count):
